@@ -6,7 +6,7 @@
 - André Augusto Silva 
 - Lucas Henrique Chaves 
 - Lucas Almeida
-- 
+  
 **Curso:** Engenharia de Software, Unidade Praça da Liberdade  
 **Instituição:** Instituto de Informática e Ciências Exatas – Pontifícia Universidade Católica de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil
 

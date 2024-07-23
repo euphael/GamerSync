@@ -1,17 +1,12 @@
 # GAMER SYNC
 
 **Autores:**
-- Raphael Marques Baião Oliveira Drumond, raphadrum2@gmail.com
-- Pedro Farias Pires, p10290703@gmail.com
-- André Augusto Silva Carvalho, andreaugustosilvacarvalho@gmail.com
-- Lucas Henrique Chaves de Barros, lucas.hcb0405@gmail.com
-- Lucas Almeida Oliveira, lucas1122oliveira@gmail.com
-
-**Professores:**
-- Danilo Boechat Seufitelli
-- Hugo Bastos de Paula
-- Luiz Henrique da Costa Silva
-
+- Raphael Marques 
+- Pedro Farias 
+- André Augusto Silva 
+- Lucas Henrique Chaves 
+- Lucas Almeida
+- 
 **Curso:** Engenharia de Software, Unidade Praça da Liberdade  
 **Instituição:** Instituto de Informática e Ciências Exatas – Pontifícia Universidade Católica de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil
 

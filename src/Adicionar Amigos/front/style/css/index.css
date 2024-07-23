@@ -1,0 +1,278 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #4706FF;
+}
+
+
+
+.imagem {
+    width: 160px;
+}
+
+header {
+    width: 237px;
+    height: auto;
+    background-color: #151236;
+    border-radius: 10px;
+    float: right;
+}
+
+.centered-text{
+    align-items: center;
+  }
+  
+  #titulo {
+    font-size: 60px;
+    color: #EFC144;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: right;
+  
+  }
+  
+  .search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #007BFF;
+    color: #EFC144;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #151236;
+    /* Cor de fundo da navegação */
+    padding: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu li a {
+    color: #EFC144;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remover sublinhado dos links */
+    font-size: 20px;
+    /* Tamanho do texto dos links */
+  }
+  
+  .menu button {
+    background-color: #4706FF;
+    /* Cor de fundo dos botões */
+    color: #EFC144;
+    /* Cor do texto dos botões */
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu button:hover {
+    background-color: #777;
+  }
+  
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #4706FF;
+    color: #EFC144;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button i {
+    font-size: 20px;
+    /* Tamanho do ícone */
+  }
+  
+  .offcanvas-body-t {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgUser {
+    max-width: 35%;
+    /* Defina a largura máxima da imagem conforme necessário */
+    margin-right: 10px;
+    /* Adicione uma margem à direita da imagem para o espaçamento desejado */
+    padding-left: 5%;
+  }
+  
+  button {
+    background-color: #4706FF;
+    /* Cor de fundo */
+    color: #EFC144;
+    /* Cor do texto */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border: none;
+    /* Remover borda */
+    border-radius: 5px;
+    /* Arredondamento dos cantos */
+    cursor: pointer;
+    /* Cursor de apontador ao passar o mouse */
+    transition: background-color 0.3s;
+    /* Transição suave na mudança de cor de fundo */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo no hover */
+  }
+  
+  .offcanvas-start {
+    background-color: #EFC144;
+  
+  }
+  
+  #profile-container {
+    background-color: #EFC144;
+    display: none;
+  }
+  
+  .offcanvas-header {
+    background-color: #151236;
+  }
+  
+  .offcanvas-body {
+    background-color: #151236;
+  }
+  
+  #offcanvasScrollingLabel {
+    color: #EFC144;
+  }
+  footer {
+    background-color: #151236;
+    color: #151236;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .card {
+    width: 30%; /* Defina a largura desejada para cada card */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    float: left; /* Para alinhar os cards lado a lado */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  /* Adicione este CSS em sua folha de estilo ou diretamente no HTML usando a tag <style> */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #4706FF;
+  }
+  
+  thead {
+    background-color: #4706FF;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #4706FF;
+  }
+  
+  th img {
+    width: 50px; /* Defina o tamanho desejado para a imagem do avatar */
+    border-radius: 50%; /* Isso cria uma borda circular para a imagem */
+  }
+  
+  /* Adicione sombras ou outros estilos de sua escolha para destacar as linhas */
+  tr:hover {
+    background-color: #4706FF;
+  }
+  
+  #userAvatar {
+    width: 50px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+    border-radius: 50%; /* Isso cria uma borda arredondada, tornando a imagem circular */
+    object-fit: cover; /* Isso mantém a proporção da imagem e cobre completamente a área especificada */
+  }
+  
+  .slogan {
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: 20px;
+    color: #EFC144;
+    align-items: flex;
+    width: 70%;
+    display: flex;
+  
+  }

@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #4706ff;
+}
+
+.sistema_avaliacao{
+    color: #eec144;
+}
+
+.container {
+    margin: 5px;
+    width: 100%;
+    background: #151236;
+    padding: 20px 30px;
+    border: 1px solid #151236;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .star-widget input{
+    display: none;
+}
+
+.star-widget {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os elementos se quebrem em telas menores */
+    justify-content: center; /* Alinhar no centro do container */
+}
+
+
+/* Adicione essa seção ao seu CSS existente */
+
+.star-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.star-widget .container {
+    flex-basis: 30%;
+    margin: 5px;
+    text-align: center;
+}
+
+.star-widget label {
+    font-size: 2em;
+    color: #444;
+    padding: 5px;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #eec144;
+    transition: color 0.2s; /* Controle da transição de cor */
+    transition-timing-function: linear; /* Define a transição como linear */
+}
+
+input:checked ~ label {
+    color: #eec144;
+    transition: color 0.2s; /* Controle da transição de cor */
+    transition-timing-function: linear; /* Define a transição como linear */
+}
+
+input#rate-5:checked ~ label {
+    color: #eec144;
+    text-shadow: 0 0 20px #952;
+    transition: color 0.2s, text-shadow 0.2s; /* Controle da transição de cor e sombra */
+    transition-timing-function: linear; /* Define a transição como linear */
+}
+
+/** texto **/
+
+form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2 ease;
+}
+
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #220d68;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.btn{
+    height: 45px;
+    width: 400px;
+    margin: 15px 0;
+}
+
+.btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #eec144;
+    color: #151236;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn button:hover{
+    background: #1b1b1b;
+}
+
+#estrela{
+    display: flex;
+    width: 100%;
+}
+
+.profile_avaliacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_avaliacao h3{
+    color: #eec144;
+}
+
+.material-symbols-outlined{
+    color: #eec144;
+}
+
+.profile_avaliacao img {
+    border-top: 10px;
+    border-radius: 50%;
+    height: 150px; /* Tamanho fixo da imagem */
+}
+
+/* Adicione essa seção ao seu CSS existente */
+
+/* ... (seu CSS existente) ... */
+
+/* Adiciona a configuração para telas menores usando media queries */
+@media screen and (max-width: 1024px) {
+    #estrela {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container {
+      width: 80%; /* Ajuste a largura dos containers para se adaptar à tela */
+      margin: 10px 0; /* Margem entre os containers */
+    }
+  
+    .star-widget,
+    .profile_avaliacao {
+      width: 100%; /* Ajuste a largura dos elementos internos dos containers */
+      text-align: center;
+    }
+  
+    .profile_avaliacao {
+      display: flex; /* Ativa o flexbox para o elemento */
+      align-items: center; /* Alinha os itens verticalmente */
+      gap: 10px; /* Espaçamento entre a imagem e o texto */
+    }
+  
+    .profile_avaliacao img {
+      height: 50px; /* Define a altura das imagens */
+      max-width: 20%; /* Garante que as imagens não ultrapassem o tamanho máximo */
+      border-radius: 50%; /* Ajusta a borda da imagem para circular */
+    }
+  
+    .star-widget label,
+    form header,
+    form .textarea textarea {
+      font-size: 16px; /* Reduz o tamanho da fonte em telas menores */
+    }
+  
+    .btn button {
+      width: 80%; /* Ajusta a largura do botão */
+    }
+  }
+  

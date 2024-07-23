@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #4706ff;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.sidebar{
+    border-right: 3px solid #151236;
+    flex: 0 0 250px; /* Torna o sidebar inflexível e com largura inicial de 250px */
+    max-width: 250px; /* Define a largura máxima como 250px */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease; /* Adiciona transição para um efeito suave */
+}
+
+.sidebarOpcao{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarOpcao .material-symbols-outlined, .img{
+    padding: 20px;
+}
+
+.sidebarOpcao h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOpcao:hover{
+    border-radius: 30px;
+    color: #eec343;
+    transition: color 100ms ease-out;
+}
+
+.sidebarOpcao.Ativador{
+    color: #eec343;
+}
+
+.sidebar_escreva{
+    width: 100%;
+    background-color: #eec343;
+    border: none;
+    color: black;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.img{
+    width: 100%;
+}
+
+/** feed **/
+
+.feed {
+    flex: 50%;
+    border-right: 3px solid #151236;
+    /* min-width: fit-content; */ /* Remova esta linha */
+    overflow-y: auto; /* Altere de scroll para auto */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.feed_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #151236;
+    padding: 15px 20px;
+}
+
+.feed_header h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feed ::-webkit-scrollbar{
+    display: none;
+}
+
+/** postBox **/
+
+.postBox_input img{
+    border-radius: 50%;
+    height: 40px;
+    background-color: #151236;
+}
+
+.postBox{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #151236;
+    padding-right: 10px;
+    background-color: #151236;
+}
+
+.postBox form{
+    display: flex;
+    flex-direction: column;
+    background-color: #151236;
+}
+
+.postBox_input{
+    display: flex;
+    padding: 20px;
+    background-color: #151236;
+}
+
+.postBox_input input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #151236;
+    color: white;
+}
+
+.postBox_postButton{
+    background-color: #eec343;
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+/** post **/
+
+.post_avatar img{
+    border-radius: 50%;
+    height: 40px;
+}
+
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #151236;
+    padding-bottom: 10px;    
+}
+
+.post_body img{
+    width: 500px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.post_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.post_headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.post_headerText h3{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post_headerDescription{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.post_body{
+    flex: 1;
+    padding: 10px;
+}
+
+.post_avatar{
+    padding: 20px;
+}
+
+/** Lateral **/
+
+.lateral{
+    flex: 30%;
+}
+
+.lateral_input{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px; 
+    background-color: #151236; 
+}
+
+.lateral_input input{
+    border: none;
+    outline: none;
+    background-color: #151236; 
+    color: grey;
+}
+
+.lateral_pesquisa {
+    color: #eec343;
+    background-color: #151236; 
+}
+
+.lateral_profile {
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    background-color: #151236;  /* Define a cor de fundo como amarelo */
+    color: black; /* Define a cor das letras como preto */
+}
+
+.profile_icon {
+    background-color: #151236; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_icon img {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.lateral_profile {
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151236;
+    border-radius: 30px;
+}
+
+.lateral_profile h2{
+    background-color: #151236; 
+    color: gray;
+}
+
+.lateral_profile span {
+    background-color: #151236;
+}
+
+.profile_icon {
+    background-color: #151236;
+}
+
+.profile_icon img {
+    border-radius: 50%;
+    height: 200px;
+    background-color: #151236;
+}
+
+.profile_info {
+    background-color: #151236; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateral_profile .material-symbols-outlined{
+    color: #eec343;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Esconde o texto e mantém apenas os ícones em telas menores */
+@media screen and (max-width: 768px) {
+    .post_body img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Esconde o texto e mantém apenas os ícones e a logo em telas menores */
+@media screen and (max-width: 768px) {
+    .sidebar h2,
+    .sidebarOpcao h2,
+    .sidebar_escreva {
+        display: none; /* Esconde os textos e botão de postagem */
+    }
+
+    .img {
+        width: 80px; /* Ajusta o tamanho da logo */
+    }
+
+    .sidebar {
+        flex: 0 0 80px; /* Define a largura do sidebar para 80px */
+        max-width: 80px; /* Define a largura máxima como 80px */
+        padding-left: 10px; /* Adiciona um pouco de espaço para os ícones */
+        padding-right: 10px; /* Adiciona um pouco de espaço para os ícones */
+    }
+
+    .sidebarOpcao .material-symbols-outlined {
+        font-size: 24px; /* Reduz o tamanho dos ícones */
+    }
+
+    .sidebarOpcao {
+        justify-content: center; /* Centraliza os ícones verticalmente */
+        padding: 10px 0; /* Adiciona espaço ao redor dos ícones */
+    }
+
+    .feed {
+        flex: 1; /* Permite que a área de postagem ocupe todo o espaço restante */
+    }
+}
+
+/* Reduzir o tamanho dos textos na barra lateral */
+@media screen and (max-width: 1024px) {
+
+    .sidebarOpcao .material-symbols-outlined {
+        padding: 20px;
+        font-size: 24px; /* Tamanho menor para os ícones */
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .lateral{
+        display: none;
+    }
+    
+}
+
+
+
+

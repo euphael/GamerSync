@@ -1,0 +1,29 @@
+# YAML 1.2
+---
+authors:
+  - family-names: Carvalho
+    given-names: André
+  - family-names: Chaves
+    given-names: Lucas
+  - family-names: Marques
+    given-names: Raphael
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: De Paula
+    given-names: Hugo Bastos
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Seufitelli
+    given-names: Danilo Boechat
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva
+    given-names: Luiz Henrique da Costa
+cff-version: "1.1.0"
+keywords:
+  - "Modelagem de Processos de Negócios"
+  - "Programação Modular"
+  - "Banco de Dados"
+repository-code: "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2023-2-ti2-1381100-gamersync"
+title: "Gamer Sync"
+date-released: 2023-12-21
